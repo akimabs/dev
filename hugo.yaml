@@ -39,4 +39,4 @@ languages:
 
       logo:
         logoText: "Akimabs Blog"
-        logoHomeLink: "/"
+        logoHomeLink: "https://akimabs.github.io/dev/"
