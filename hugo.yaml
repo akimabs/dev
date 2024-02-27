@@ -1,0 +1,42 @@
+baseurl: "https://akimabs.dev"
+languageCode: "en-us"
+theme: "hello-friend"
+paginate: 1
+
+params:
+  defaultTheme: "light"
+  showMenuItems: 5
+  showReadingTime: true
+  framed: true
+
+languages:
+  en:
+    title: "Akimabs Blog"
+    subtitle: ""
+    keywords: ""
+    copyright: ""
+    menuMore: "Show more"
+    writtenBy: "Written by"
+    readMore: "Read more"
+    readOtherPosts: "Read other posts"
+    newerPosts: "Newer posts"
+    olderPosts: "Older posts"
+    minuteReadingTime: "min read"
+    dateFormatSingle: "2006-01-02"
+    dateFormatList: "2006-01-02"
+
+    params:
+      HeaderContent: |
+        Abdul Hakim
+      SubtitleContent: |
+        Software Engineer
+      Content: |
+        Hello, I am a professional Fullstack Developer. I possess knowledge and skills in Product Development as a Fullstack Developer, using a stack that includes the Node.js framework, DBMS/RDBMS, responsive web development, mobile application development, UI/UX prototyping. I have experience in building highly scalable apps by writing code efficiently and effectively.
+      ContentEmail: |
+        ahakimabs@gmail.com
+      SocialLinkedin: "https://linkedin.com/in/akimabs"
+      GithubLinkedin: "https://github.com/akimabs"
+
+      logo:
+        logoText: "Akimabs Blog"
+        logoHomeLink: "/"
