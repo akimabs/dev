@@ -4,7 +4,7 @@ theme: "hello-friend"
 paginate: 1
 
 params:
-  defaultTheme: "light"
+  defaultTheme: "dark"
   showMenuItems: 5
   showReadingTime: true
   framed: true
