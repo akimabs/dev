@@ -558,9 +558,9 @@ hr {
   @media (max-width: 684px) {
     .framed {
       width: auto;
-      max-width: 680px;
-      margin: -10px -5px -20px;
-      padding: 30px; } }
+      max-width: 720px;
+      margin: -10px 0px -20px;
+      padding: 20px; } }
 .content-email {
   text-decoration: none;
   display: inline-block; }
