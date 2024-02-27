@@ -13,7 +13,7 @@ languages:
   en:
     title: "Akimabs Blog"
     subtitle: ""
-    keywords: ""
+    keywords: "Blog"
     copyright: ""
     menuMore: "Show more"
     writtenBy: "Written by"
@@ -35,7 +35,7 @@ languages:
       ContentEmail: |
         ahakimabs@gmail.com
       SocialLinkedin: "https://linkedin.com/in/akimabs"
-      GithubLinkedin: "https://github.com/akimabs"
+      SocialGithub: "https://github.com/akimabs"
 
       logo:
         logoText: "Akimabs Blog"
