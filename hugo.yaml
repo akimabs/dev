@@ -1,4 +1,4 @@
-baseurl: "https://akimabs.dev"
+baseurl: "https://akimabs.github.io/dev/"
 languageCode: "en-us"
 theme: "hello-friend"
 paginate: 1
