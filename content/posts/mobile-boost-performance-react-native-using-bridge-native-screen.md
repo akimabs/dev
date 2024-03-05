@@ -2,6 +2,8 @@
 title = 'Mobile: Boost Performance React Native Using Bridge Native Screen'
 date = 2024-02-26T17:55:09+07:00
 draft = false
+rssFullText = true
+cover = 'img/mobile-boost-performance-react-native-using-bridge-native-screen.png'
 +++
 
 ## Intro
