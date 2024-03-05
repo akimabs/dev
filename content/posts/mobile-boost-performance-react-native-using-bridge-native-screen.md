@@ -23,9 +23,11 @@ But it's a common struggle to deals with performance issue. With so much existin
 
 For now, I'll be dividing this into several threads that you can read sequentially. This will serve as a flow to understand the correct sequence for implementing the Native Screen bridge.
 
+- Mobile: Boost Performance React Native Setup Playground to Wrap Native Code
+- Mobile: Boost Performance React Native Integrate With Navigating Between Native Screen
+  - Passing parameter into native side
 - Mobile: Boost Performance React Native Create Your First Native Screen
   - Jetpack Compose
   - Swift UIKIT
-- Mobile: Boost Performance React Native Integrate With Navigating Between Native Screen
 - Mobile: Boost Performance React Native Call Your Cache Data Across Native Screen
-  - Deals with react native async storage between native side
+  - Deals with react-native-asyncstorage between native side

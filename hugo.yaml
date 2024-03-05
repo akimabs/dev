@@ -1,7 +1,7 @@
 baseurl: "https://akimabs.dev"
 languageCode: "en-us"
 theme: "hello-friend"
-paginate: 1
+paginate: 3
 rssFullText: true
 
 params:
@@ -19,6 +19,7 @@ languages:
     menuMore: "Show more"
     writtenBy: "Written by"
     readMore: "Read more"
+    contentTypeName: "posts"
     readOtherPosts: "Read other posts"
     newerPosts: "Newer posts"
     olderPosts: "Older posts"
