@@ -380,7 +380,7 @@ img {
   @media (max-width: 684px) {
     img {
       width: auto;
-      max-width: 330px; } }
+      max-width: 350px; } }
   img.left {
     margin-right: auto; }
   img.center {
@@ -504,7 +504,6 @@ ol ol {
   @media (max-width: 684px) {
     .content {
       width: auto;
-      max-width: 370px;
       margin-top: 0; } }
 hr {
   width: 100%;
