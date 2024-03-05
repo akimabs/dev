@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head><script src="/dev/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=dev/livereload" data-no-instant defer></script>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
       <title>
         Mobile: Boost Performance React Native Using Bridge Native Screen ::
@@ -11,14 +11,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta
   name="description"
-  content=""
+  content="Intro # The topic of native code bridges is an ongoing challenge, especially when React Native&amp;rsquo;s latest documentation when this was written are still marks some features as experimental. based on this reason i do research into bridging native screens into React Native&amp;rsquo;s base code seems like a promising initiative. This could potentially serve as a pathway for developers to refactor towards pure native code, such as Java/Kotlin and Swift, without abandoning React Native side."
 />
 <meta
   name="keywords"
   content="Blog"
 />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="http://localhost:1313/dev/posts/mobile-boost-performance-react-native-using-bridge-native-screen/" />
+<link rel="canonical" href="http://localhost:1313/posts/mobile-boost-performance-react-native-using-bridge-native-screen/" />
 
 
 
@@ -26,17 +26,18 @@
 
 
 
-<link rel="stylesheet" href="/dev/css/style.css" />
+<link rel="stylesheet" href="/css/style.css" />
 
-<link rel="stylesheet" href="http://localhost:1313/dev/style.css" />
+<link rel="stylesheet" href="http://localhost:1313/style.css" />
 
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:1313/dev/img/apple-touch-icon-144-precomposed.png" />
-<link rel="shortcut icon" href="http://localhost:1313/dev/img/favicon.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:1313/img/apple-touch-icon-144-precomposed.png" />
+<link rel="shortcut icon" href="http://localhost:1313/img/favicon.png" />
 
 
 <link href="https://cdn.jsdelivr.net/npm/inter-ui/inter.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/inter-ui/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://cdn.jsdelivr.net/npm/inter-ui/Inter-Light.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
 <link href="https://cdn.jsdelivr.net/npm/inter-ui/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
 <link href="https://cdn.jsdelivr.net/npm/inter-ui/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
 <link href="https://cdn.jsdelivr.net/npm/inter-ui/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
@@ -46,14 +47,14 @@
 
 
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Mobile: Boost Performance React Native Using Bridge Native Screen"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="Intro # The topic of native code bridges is an ongoing challenge, especially when React Native&rsquo;s latest documentation when this was written are still marks some features as experimental. based on this reason i do research into bridging native screens into React Native&rsquo;s base code seems like a promising initiative. This could potentially serve as a pathway for developers to refactor towards pure native code, such as Java/Kotlin and Swift, without abandoning React Native side."/>
 
 
 
 <meta property="og:title" content="Mobile: Boost Performance React Native Using Bridge Native Screen" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="Intro # The topic of native code bridges is an ongoing challenge, especially when React Native&rsquo;s latest documentation when this was written are still marks some features as experimental. based on this reason i do research into bridging native screens into React Native&rsquo;s base code seems like a promising initiative. This could potentially serve as a pathway for developers to refactor towards pure native code, such as Java/Kotlin and Swift, without abandoning React Native side." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/dev/posts/mobile-boost-performance-react-native-using-bridge-native-screen/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="http://localhost:1313/posts/mobile-boost-performance-react-native-using-bridge-native-screen/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-02-26T17:55:09+07:00" />
 <meta property="article:modified_time" content="2024-02-26T17:55:09+07:00" />
 
@@ -132,7 +133,7 @@
 
       
         <span class="post-read-time"
-          >— 0 min read</span
+          >— 2 min read</span
         >
       
     </div>
@@ -143,7 +144,41 @@
 
     <div class="post-content">
       
-      
+      <h2 id="intro">
+  Intro
+  <a href="#intro" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>The topic of native code bridges is an ongoing challenge, especially when React Native&rsquo;s latest documentation when this was written
+are still marks some features as <a href="https://reactnative.dev/docs/the-new-architecture/pillars-fabric-components"><strong>experimental</strong></a>. based on this reason i do research into bridging native screens into React Native&rsquo;s base code seems like a promising initiative. This could potentially serve as a pathway for developers to refactor towards pure native code, such as Java/Kotlin and Swift, without abandoning React Native side.</p>
+<h2 id="problem">
+  Problem
+  <a href="#problem" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<blockquote>
+<p>One of the challenges with managing multiplatform software development is the laborious efforts of creating &amp; maintaining parity for every identical component constantly across platforms.</p>
+</blockquote>
+<p>I think all React Native devs know the deal, screens built with React Native don&rsquo;t quite match up in performance with those crafted in pure native code, like Kotlin/Java and Swift</p>
+<p>But it&rsquo;s a common struggle to deals with performance issue. With so much existing React Native codebases in companies, we&rsquo;re kinda stuck rolling with it. and gotta keep optimizing performance using tricks like <strong>memoizing components</strong>, <strong>preventing unnecessary component updates</strong>, <strong>handling primitive data updates</strong>, <strong>caching</strong>, and the whole shebang.</p>
+<h2 id="solution">
+  Solution
+  <a href="#solution" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>For now, I&rsquo;ll be dividing this into several threads that you can read sequentially. This will serve as a flow to understand the correct sequence for implementing the Native Screen bridge.</p>
+<ul>
+<li>Mobile: Boost Performance React Native Create Your First Native Screen
+<ul>
+<li>Jetpack Compose</li>
+<li>Swift UIKIT</li>
+</ul>
+</li>
+<li>Mobile: Boost Performance React Native Integrate With Navigating Between Native Screen</li>
+<li>Mobile: Boost Performance React Native Call Your Cache Data Across Native Screen
+<ul>
+<li>Deals with react native async storage between native side</li>
+</ul>
+</li>
+</ul>
+
     </div>
     
 
@@ -169,7 +204,7 @@
 
 
 
-<script type="text/javascript" src="/dev/bundle.min.js"></script>
+<script type="text/javascript" src="/bundle.min.js"></script>
 
 
 
