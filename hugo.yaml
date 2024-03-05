@@ -3,7 +3,6 @@ languageCode: "en-us"
 theme: "hello-friend"
 paginate: 1
 rssFullText: true
-useRelativeCover: true
 
 params:
   defaultTheme: "dark"

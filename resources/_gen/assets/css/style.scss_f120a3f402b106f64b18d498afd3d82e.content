@@ -335,7 +335,8 @@ body {
     body {
       font-size: 1rem; } }
 p {
-  font-weight: 300; }
+  font-weight: 300;
+  text-align: justify; }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.3; }
@@ -344,13 +345,16 @@ h1 {
   font-size: 2.625rem; }
 
 h2 {
-  font-size: 1.625rem; }
+  font-size: 1.625rem;
+  text-align: justify; }
 
 h3 {
-  font-size: 1.375rem; }
+  font-size: 1.375rem;
+  text-align: justify; }
 
 h4 {
-  font-size: 1.125rem; }
+  font-size: 1.125rem;
+  text-align: justify; }
 
 @media (max-width: 684px) {
   h1 {
@@ -367,7 +371,16 @@ a {
 
 img {
   display: block;
-  max-width: 100%; }
+  width: auto;
+  max-width: 760px; }
+  @media (max-width: 900px) {
+    img {
+      width: auto;
+      max-width: 620px; } }
+  @media (max-width: 684px) {
+    img {
+      width: auto;
+      max-width: 330px; } }
   img.left {
     margin-right: auto; }
   img.center {
@@ -490,6 +503,8 @@ ol ol {
   margin: 50px 0; }
   @media (max-width: 684px) {
     .content {
+      width: auto;
+      max-width: 370px;
       margin-top: 0; } }
 hr {
   width: 100%;
