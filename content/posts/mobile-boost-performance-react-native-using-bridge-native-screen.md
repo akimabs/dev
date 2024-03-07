@@ -23,7 +23,7 @@ But it's a common struggle to deals with performance issue. With so much existin
 
 For now, I'll be dividing this into several threads that you can read sequentially. This will serve as a flow to understand the correct sequence for implementing the Native Screen bridge.
 
-- [Mobile: Boost Performance React Native Setup Playground to Wrap Native Code](/posts/mobile-boost-performance-react-native-setup-playground-to-wrap-native-code.md)
+- [Mobile: Boost Performance React Native Setup Playground to Wrap Native Code](/posts/mobile-boost-performance-react-native-setup-playground-to-wrap-native-code)
 - Mobile: Boost Performance React Native Integrate With Navigating Between Native Screen
   - Passing parameter into native side
 - Mobile: Boost Performance React Native Create Your First Native Screen
