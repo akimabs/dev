@@ -2,6 +2,7 @@
 title = 'Mobile: Boost Performance React Native Setup Playground to Wrap Native Code'
 date = 2024-03-05T15:22:59+07:00
 draft = false
+rssFullText = true
 +++
 
 ## Intro
