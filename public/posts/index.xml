@@ -15,11 +15,11 @@
     
     
     <item>
-      <title>Mobile Boost Performance React Native Create Your First Native Screen</title>
-      <link>http://localhost:1313/posts/mobile-boost-performance-react-native-create-your-first-native-screen/</link>
+      <title>Mobile: Boost Performance React Native Setup Playground to Wrap Native Code</title>
+      <link>http://localhost:1313/posts/mobile-boost-performance-react-native-setup-playground-to-wrap-native-code/</link>
       <pubDate>Tue, 05 Mar 2024 15:22:59 +0700</pubDate>
       
-      <guid>http://localhost:1313/posts/mobile-boost-performance-react-native-create-your-first-native-screen/</guid>
+      <guid>http://localhost:1313/posts/mobile-boost-performance-react-native-setup-playground-to-wrap-native-code/</guid>
       <description>
         
           
@@ -28,7 +28,10 @@
         
         
         
-          One of the challenges with managing multiplatform software development is the laborious efforts of creating &amp;amp; maintaining parity for every identical component constantly across platforms.
+           Intro # This is first part to boost your react native app with native performance using native screen. lets check this out!
+Prerequisites # Please be sure to have react-native environment, xcode, android studio to follow this thread
+Walktrough # You can create react native project / you can do with existing project
+Android # 
           
         
         </description>
