@@ -12,7 +12,7 @@ This is the first part to boost your React Native app with native performance us
 
 ## Prerequisites
 
-Make sure you have the `react-native environment`, `Xcode`, and `Android Studio` installed to follow this thread. And you can either create a new React Native project or work with an existing one.
+Make sure you have the `react-native environment`, `Xcode`, and `Android Studio` installed to follow this thread. And you can either create a new React Native project or work with an existing one. and please be remember at this project we name it with `sinaureact`
 
 ## Android
 
@@ -71,14 +71,14 @@ And you can run the project to check if the Jetpack Compose installation was suc
 
 > Note: The latest versions of React Native use Kotlin for native handling. If you're using an older version that uses Java, you can switch to Java and implement the necessary code in Java.
 
-First, Navigate to `android/app/src/main/java/com/your-project` directory and create a file with name `CustomModule.kt`, `CustomModulePackage.kt` for handle bridge all native module for your app
+For handle bridge your android native module first, navigate to `android/app/src/main/java/com/sinaureact` directory and create a file with name `CustomModule.kt`, `CustomModulePackage.kt`
 
 > Tips: You can use ChatGPT to translate Kotlin code to Java code.
 
 `CustomModule.kt`
 
 ```kotlin
-package com.your-project
+package com.sinaureact
 
 import android.content.Intent
 import androidx.compose.runtime.Composable
@@ -106,7 +106,7 @@ class CustomModule(reactContext: ReactApplicationContext) : ReactContextBaseJava
 `CustomModulePackage.kt`
 
 ```kotlin
-package com.your-project
+package com.sinaureact
 
 import android.view.View
 import com.facebook.react.ReactPackage
