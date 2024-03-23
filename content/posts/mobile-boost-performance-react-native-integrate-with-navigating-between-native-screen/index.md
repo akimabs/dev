@@ -1,7 +1,7 @@
 +++
 title = 'Mobile Boost Performance React Native Integrate With Navigating Between Native Screen'
 date = 2024-03-14T12:29:33+07:00
-draft = false
+draft = true
 rssFullText = true
 +++
 
@@ -17,4 +17,8 @@ Have knowledge at native mobile development using swift/java kotlin are good, it
 
 In the previos thread we successfully do first brigde dummy function to communicate react-native with native side, and to create navigate to native screen we can create a new screen with jetpack compose with create some package at `android/app/src/main/java/com/sinaureact` with name `statistic` at inside package `dashboard` and add the kotlin file with name `Statistic.kt` for handle jetpack compose screen
 
+#####
+
 {{< image src="statistic-file-package.png" alt="statistic-file-package" position="center" style="border-radius: 8px;" >}}
+
+#####
