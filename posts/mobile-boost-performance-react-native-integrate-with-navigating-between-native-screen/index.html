@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+      <title>
+        Mobile Boost Performance React Native Integrate With Navigating Between Native Screen ::
+        Akimabs Blog
+      </title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content="Intro # At this moment we will create native screen and navigate from react native. Let&amp;rsquo;s check this out!
+Prerequisites # Have knowledge at native mobile development using swift/java kotlin are good, its you dont have experience you can still follow this walktrough and dont be insecure :D and please be remember at this project we name it with sinaureact
+Android # In the previos thread we successfully do first brigde dummy function to communicate react-native with native side, and to create navigate to native screen we can create a new screen with jetpack compose with create some package at android/app/src/main/java/com/sinaureact with name statistic at inside package dashboard and add the kotlin file with name Statistic."
+/>
+<meta
+  name="keywords"
+  content="Blog"
+/>
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="http://localhost:1313/posts/mobile-boost-performance-react-native-integrate-with-navigating-between-native-screen/" />
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.css" />
+
+<link rel="stylesheet" href="http://localhost:1313/style.css" />
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:1313/img/apple-touch-icon-144-precomposed.png" />
+<link rel="shortcut icon" href="http://localhost:1313/img/favicon.png" />
+
+
+<link href="https://cdn.jsdelivr.net/npm/inter-ui/inter.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/inter-ui/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://cdn.jsdelivr.net/npm/inter-ui/Inter-Light.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://cdn.jsdelivr.net/npm/inter-ui/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://cdn.jsdelivr.net/npm/inter-ui/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://cdn.jsdelivr.net/npm/inter-ui/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://cdn.jsdelivr.net/npm/inter-ui/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://cdn.jsdelivr.net/npm/inter-ui/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+
+
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Mobile Boost Performance React Native Integrate With Navigating Between Native Screen"/>
+<meta name="twitter:description" content="Intro # At this moment we will create native screen and navigate from react native. Let&rsquo;s check this out!
+Prerequisites # Have knowledge at native mobile development using swift/java kotlin are good, its you dont have experience you can still follow this walktrough and dont be insecure :D and please be remember at this project we name it with sinaureact
+Android # In the previos thread we successfully do first brigde dummy function to communicate react-native with native side, and to create navigate to native screen we can create a new screen with jetpack compose with create some package at android/app/src/main/java/com/sinaureact with name statistic at inside package dashboard and add the kotlin file with name Statistic."/>
+
+
+
+<meta property="og:title" content="Mobile Boost Performance React Native Integrate With Navigating Between Native Screen" />
+<meta property="og:description" content="Intro # At this moment we will create native screen and navigate from react native. Let&rsquo;s check this out!
+Prerequisites # Have knowledge at native mobile development using swift/java kotlin are good, its you dont have experience you can still follow this walktrough and dont be insecure :D and please be remember at this project we name it with sinaureact
+Android # In the previos thread we successfully do first brigde dummy function to communicate react-native with native side, and to create navigate to native screen we can create a new screen with jetpack compose with create some package at android/app/src/main/java/com/sinaureact with name statistic at inside package dashboard and add the kotlin file with name Statistic." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/posts/mobile-boost-performance-react-native-integrate-with-navigating-between-native-screen/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-14T12:29:33+07:00" />
+<meta property="article:modified_time" content="2024-03-14T12:29:33+07:00" />
+
+
+
+
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a
+  href="https://akimabs.dev"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >Akimabs Blog</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+      <span class="theme-toggle">
+        <svg
+  class="theme-toggler"
+  width="24"
+  height="24"
+  viewBox="0 0 48 48"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"
+  />
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <article class="post">
+    <h1 class="post-title">Mobile Boost Performance React Native Integrate With Navigating Between Native Screen</h1>
+    <div class="post-meta">
+      
+        <time class="post-date">
+          2024-03-14
+        </time>
+
+        
+          
+        
+      
+
+      
+
+
+      
+        <span class="post-read-time"
+          >— 1 min read</span
+        >
+      
+    </div>
+
+    
+
+    
+
+    <div class="post-content">
+      
+      <h2 id="intro">
+  Intro
+  <a href="#intro" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>At this moment we will create native screen and navigate from react native. Let&rsquo;s check this out!</p>
+<h2 id="prerequisites">
+  Prerequisites
+  <a href="#prerequisites" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>Have knowledge at native mobile development using swift/java kotlin are good, its you dont have experience you can still follow this walktrough and dont be insecure :D and please be remember at this project we name it with <code>sinaureact</code></p>
+<h2 id="android">
+  Android
+  <a href="#android" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>In the previos thread we successfully do first brigde dummy function to communicate react-native with native side, and to create navigate to native screen we can create a new screen with jetpack compose with create some package at <code>android/app/src/main/java/com/sinaureact</code> with name <code>statistic</code> at inside package <code>dashboard</code> and add the kotlin file with name <code>Statistic.kt</code> for handle jetpack compose screen</p>
+<h5 id="heading">
+  
+  <a href="#heading" class="h-anchor" aria-hidden="true">#</a>
+</h5>
+
+  <img src="statistic-file-package.png"  alt="statistic-file-package"  class="center"  style="border-radius: 8px;"  />
+
+
+<h5 id="heading-1">
+  
+  <a href="#heading-1" class="h-anchor" aria-hidden="true">#</a>
+</h5>
+
+    </div>
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h"
+              >Read other posts</span
+            >
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+            
+              <span class="button next">
+                <a href="http://localhost:1313/posts/mobile-boost-performance-react-native-setup-playground-to-wrap-native-code/">
+                  <span class="button__text">Mobile: Boost Performance React Native Setup Playground to Wrap Native Code</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+    
+      
+        
+
+      
+    
+  </article>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2024 Akimabs </span>
+      </div>
+    
+  </div>
+</footer>
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+      
+    </div>
+
+    
+  </body>
+</html>
