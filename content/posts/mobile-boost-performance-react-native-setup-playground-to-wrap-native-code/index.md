@@ -36,6 +36,10 @@ android {
       kotlinCompilerExtensionVersion compose_version
       kotlinCompilerVersion "1.8.0"
   }
+
+  kotlinOptions {
+      jvmTarget = '17'
+  }
 }
 ```
 
